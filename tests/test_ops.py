@@ -1,5 +1,4 @@
-
-from arith.ops import add, sub, mul, div
+from src.arith.ops import add, sub, mul, div
 import pytest
 
 def test_add():
