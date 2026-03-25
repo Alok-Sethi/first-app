@@ -1,0 +1,26 @@
+1. General Docker Commands
+docker version          – Show client & server versions [spacelift.io]
+docker system info      – System‑wide information [spacelift.io]
+docker help                 – Show help index of all commands [spacelift.io]
+docker <command> --help         – Help for specific command [spacelift.io]
+
+
+2. Image Management Commands
+docker build . – Build from Dockerfile in current dir [spacelift.io]
+docker build -t name:tag . – Build + tag image [spacelift.io]
+docker build --no-cache – Build without cache [dev.to]
+docker build --pull – Pull newer base images first [spacelift.io]
+
+
+Docker command to build an image and run the container
+1) docker build -t <docker image name>:<version> .
+here '-t' flag used for name and version of the docker image and '.' is used for location of docker file image.
+2) docker run -d -p 8080:5000 <image name>:<version>
+here '-p' maps a port on your host machine to a port inside the container. This allows you to access the application from your host browser.
+'-d' flag is used to run the container in background which is optional.
+3) docker ps 
+Here verify the container is running and list of active containers.
+4) http://localhost:8080. 
+here we can access the application in web browser.
+
+
